@@ -1,0 +1,35 @@
+<div class="new-plan">
+    <div class="new-plan__container">
+        <div class="new-plan__header">
+            <div class="header__text">
+                Планирование
+            </div>
+            <div class="header__item item">
+                <div class="header__icon icon">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.99991 9.17L1.82991 5L0.409912 6.41L5.99991 12L15.9999 2L14.5899 0.589996L5.99991 9.17Z" fill="#1071FF"/>
+                    </svg>                        
+                </div>
+            </div>
+            <div class="header__item item">
+                <div class="header__icon icon">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.41L10.59 0L6 4.59L1.41 0L0 1.41L4.59 6L0 10.59L1.41 12L6 7.41L10.59 12L12 10.59L7.41 6L12 1.41Z" fill="black" fill-opacity="0.54"/>
+                    </svg>                        
+                </div>
+            </div>
+        </div>
+
+        <div class="new-plan__nav">
+            <div class="nav__block">
+                <div id="general" class="nav__tab-active" (click)="showTab = 'general'; toggleClass($event)">Основное</div>
+                <div id="members" class="nav__tab" (click)="showTab = 'members'; toggleClass($event)">Участники</div>
+            </div>
+        </div>
+        
+        <app-new-plan-general *ngIf="showTab === 'general'"></app-new-plan-general>
+        <app-new-plan-members *ngIf="showTab === 'members'"></app-new-plan-members>
+
+        
+    </div>
+</div>

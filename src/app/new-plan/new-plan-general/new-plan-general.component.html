@@ -1,0 +1,164 @@
+<div class="new-plan___general">
+    <div class="new-plan__programm">
+        <div class="programm__container">
+            <div class="programm__name">Программа</div>
+            <div class="programm__selector">
+            <select name="" id="">
+                <option value="">Страхование с заботой о клиенте</option>
+            </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="new-plan__info">
+        <div class="info__container">
+            <div class="info__title">Мероприятие, дата и время проведения</div>
+            <div class="info__event">
+                <div class="event__header">
+                    <div class="event__title">Мероприятие</div>
+                    <div class="event__name">Главные правила продаж&ensp;<span>Тренинг</span></div>
+                </div>
+                <div class="event__selectors">
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Дата</div>
+                            <div class="picker__selector">
+                                <mat-datepicker-toggle [for]="myDatePicker1" matSufffix></mat-datepicker-toggle>
+                                <input matInput [matDatepicker]="myDatePicker1">
+                                <mat-datepicker class="datepicker" #myDatePicker1 ></mat-datepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Время</div>
+                            <div class="picker__selector">
+                                <ngx-material-timepicker-toggle [for]="myTimePicker1" matSuffix></ngx-material-timepicker-toggle>
+                                <input matInput [ngxTimepicker]="myTimePicker1">
+                                <ngx-material-timepicker class="timepicker" #myTimePicker1></ngx-material-timepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Тренер</div>
+                            <div class="picker__selector">
+                                <div class="picker__icon"></div>
+                                <select name="" id="">
+                                    <option value="" disabled selected>Тренер</option>
+                                    <option value="">Сергей Ефремов</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info__event">
+                <div class="event__header">
+                    <div class="event__title">Мероприятие</div>
+                    <div class="event__name">Страхование без потерь&ensp;<span>Тренинг</span></div>
+                </div>
+                <div class="event__selectors">
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Дата</div>
+                            <div class="picker__selector">
+                                <mat-datepicker-toggle [for]="myDatePicker2" matSufffix></mat-datepicker-toggle>
+                                <input matInput [matDatepicker]="myDatePicker2">
+                                <mat-datepicker class="datepicker" #myDatePicker2 ></mat-datepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Время</div>
+                            <div class="picker__selector">
+                                <ngx-material-timepicker-toggle [for]="myTimePicker2" matSuffix></ngx-material-timepicker-toggle>
+                                <input matInput [ngxTimepicker]="myTimePicker2">
+                                <ngx-material-timepicker class="timepicker" #myTimePicker2></ngx-material-timepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Тренер</div>
+                            <div class="picker__selector">
+                                <div class="picker__icon"></div>
+                                <select name="" id="">
+                                    <option value="" disabled selected>Тренер</option>
+                                    <option value="">Сергей Ефремов</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info__event">
+                <div class="event__header">
+                    <div class="event__title">Мероприятие</div>
+                    <div class="event__name">Страховой случай или как помочь клиенту&ensp;<span>Тренинг</span></div>
+                </div>
+                <div class="event__selectors">
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Дата</div>
+                            <div class="picker__selector">
+                                <mat-datepicker-toggle [for]="myDatePicker3" matSufffix></mat-datepicker-toggle>
+                                <input matInput [matDatepicker]="myDatePicker3">
+                                <mat-datepicker class="datepicker" #myDatePicker3 ></mat-datepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Время</div>
+                            <div class="picker__selector">
+                                <ngx-material-timepicker-toggle [for]="myTimePicker3" matSuffix></ngx-material-timepicker-toggle>
+                                <input matInput [ngxTimepicker]="myTimePicker3">
+                                <ngx-material-timepicker class="timepicker" #myTimePicker3></ngx-material-timepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event__picker">
+                        <div class="picker__block">
+                            <div class="picker__name">Тренер</div>
+                            <div class="picker__selector">
+                                <div class="picker__icon"></div>
+                                <select name="" id="">
+                                    <option value="" disabled selected>Тренер</option>
+                                    <option value="">Сергей Ефремов</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="new-plan__by-code">
+        <div class="by-code__title">Условия записи по коду</div>
+        <div class="by-code__buttons">
+            <div class="by-code__button">
+                <input type="radio" id="button1" name="button" checked>
+                <label for="button1">Не использовать код доступа</label>
+            </div>
+            <div class="by-code__button">
+                <input type="radio" id="button2" name="button">
+                <label for="button2">Требовать регистрацию</label>
+            </div>
+            <div class="by-code__button">
+                <input type="radio" id="button3" name="button">
+                <label for="button3">Запросить только имя и фамилию</label>
+            </div>
+            <div class="by-code__button">
+                <input type="radio" id="button4" name="button">
+                <label for="button4">Не требовать регистрацию, имя и фамилию</label>
+            </div>
+        </div>
+    </div>
+</div>

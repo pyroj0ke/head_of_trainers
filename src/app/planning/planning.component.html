@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<div class="planning">
+    <div class="planning__container">
+        <div class="planning__nav">
+            <div id="group" class="nav__tab-active" (click)="toggleClass($event)">Групповое</div>
+            <div id="solo" class="nav__tab" (click)="toggleClass($event)">Индивидуальное</div>
+        </div>
+
+        <app-filter></app-filter>
+
+        <app-list></app-list>
+    </div>
+</div>

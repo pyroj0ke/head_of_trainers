@@ -1,0 +1,28 @@
+.list-menu__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 88px;
+    width: 162px;
+    margin: -4px 0;
+}
+.list-menu__block {
+    display: flex;
+    height: 36px;
+    padding: 0 17px;
+}
+.list-menu__icon {
+    height: 18px;
+    width: 18px;
+}
+
+.list-menu__text {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-menu-content:not(:empty) {
+    padding: 0;
+}

@@ -1,0 +1,58 @@
+<div class="list">
+    <div class="list__container">
+        <table mat-table [dataSource]="dataSource" class="list__table" matSort>
+
+            <ng-container class="list__date" matColumnDef="date">
+                <th class="list__header" mat-header-cell *matHeaderCellDef mat-sort-header> Дата начала </th>
+                <td class="list__content" mat-cell *matCellDef="let element"> {{datePattern(element.date)}} </td>
+            </ng-container>
+          
+            <ng-container class="list__name" matColumnDef="name">
+                <th class="list__header" mat-header-cell *matHeaderCellDef mat-sort-header> Название </th>
+                <td class="list__content" mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <ng-container class="list__members" matColumnDef="members">
+                <th class="list__header" mat-header-cell *matHeaderCellDef mat-sort-header> Участников </th>
+                <td class="list__content" mat-cell *matCellDef="let element"> {{element.members}} </td>
+            </ng-container>
+          
+            <ng-container class="list__trainer" matColumnDef="trainer">
+                <th class="list__header" mat-header-cell *matHeaderCellDef mat-sort-header> Тренер </th>
+                <td class="list__content" mat-cell *matCellDef="let element"> {{element.trainer}} </td>
+            </ng-container>
+        
+            <ng-container class="list__progress" matColumnDef="progress">
+                <th class="list__header" mat-header-cell *matHeaderCellDef mat-sort-header> Прогресс </th>
+                <td class="list__content" mat-cell *matCellDef="let element">
+                    <div class="list__block">
+                        <div class="list__sub-block">
+                            <div class="list__item">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.73357 2.91153C0.855973 4.04045 0.333374 5.45903 0.333374 6.99967C0.333374 7.30734 0.354216 7.61014 0.394564 7.90674L2.02194 7.47068C2.00745 7.31563 2.00004 7.15851 2.00004 6.99967C2.00004 5.91977 2.3424 4.91982 2.92449 4.10245L1.73357 2.91153ZM2.9121 1.73304L4.10303 2.92397C4.70545 2.495 5.40704 2.19625 6.16671 2.0688V0.384583C4.94949 0.536367 3.83419 1.01629 2.9121 1.73304ZM6.16671 13.6148C3.73967 13.3121 1.71778 11.7048 0.824962 9.51687L2.4524 9.0808C3.13089 10.561 4.5108 11.6527 6.16671 11.9305V13.6148ZM7.83337 11.9305C10.1981 11.5338 12 9.47717 12 6.99967C12 4.52217 10.1981 2.46553 7.83337 2.0688V0.384583C11.122 0.794665 13.6667 3.59999 13.6667 6.99967C13.6667 10.3994 11.122 13.2047 7.83337 13.6148V11.9305Z" fill="black" fill-opacity="0.54"/>
+                                </svg>
+                            </div>
+                            <div class="list__text"> {{element.progress}} % </div>
+                        </div>
+                        <div class="list__item-2" [matMenuTriggerFor]="rowMenu">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.16">
+                                <rect width="32" height="32" rx="16" fill="black" fill-opacity="0.87"/>
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 13.3334C16.7333 13.3334 17.3333 12.7334 17.3333 12C17.3333 11.2667 16.7333 10.6667 16 10.6667C15.2666 10.6667 14.6666 11.2667 14.6666 12C14.6666 12.7334 15.2666 13.3334 16 13.3334ZM16 14.6667C15.2666 14.6667 14.6666 15.2667 14.6666 16C14.6666 16.7334 15.2666 17.3334 16 17.3334C16.7333 17.3334 17.3333 16.7334 17.3333 16C17.3333 15.2667 16.7333 14.6667 16 14.6667ZM16 18.6667C15.2666 18.6667 14.6666 19.2667 14.6666 20C14.6666 20.7334 15.2666 21.3334 16 21.3334C16.7333 21.3334 17.3333 20.7334 17.3333 20C17.3333 19.2667 16.7333 18.6667 16 18.6667Z" fill="black" fill-opacity="0.54"/>
+                            </svg>    
+                        </div>                            
+                    </div>
+                </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+</div>
+
+
+<mat-menu class="menu__button" #rowMenu xPosition="after" yPosition="above">
+    <app-list-menu></app-list-menu>
+</mat-menu>

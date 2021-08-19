@@ -1,0 +1,153 @@
+.new-plan__programm {
+    margin: 24px;
+    padding-bottom: 18px;
+}
+.programm__container {
+
+}
+.programm__name {
+    padding: 9px 1px 2px 1px;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.programm__selector {
+    padding: 1px 0 4px 1px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    select {
+        font-weight: 500;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0 0 4px -4px;
+        border: 0;
+        outline: none;
+    }
+}
+
+.new-plan__info {
+}
+.info__container {
+    margin: 0 24px;
+}
+.info__title {
+    padding: 10px 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.info__event {
+    margin: 8px 0;
+}
+.event__header {
+    padding: 8px 1px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.event__title {
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.event__name {
+    padding-top: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.38);
+    span {
+        color: rgba(0, 0, 0, 0.22);
+    }
+}
+
+.event__selectors {
+    margin-top: 21px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event__picker {
+    max-height: 66px;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    // until solve problem with icons
+    // padding-bottom: 18px; 
+    width: 246px;
+}
+.picker__block {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0 4px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.picker__name {
+    margin-left: 35px;
+    padding: 6px 0 3px 0;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.picker__selector {
+    display: flex;
+    select {
+        flex: 1 1 auto;
+        font-weight: 500;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0 0 4px 12px;
+        border: 0;
+        outline: none;
+    }
+    input {
+        flex: 1 1 auto;
+        font-weight: 500;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        border: 0;
+        outline: none;
+    }
+}
+.picker__icon {
+    height: 18px;
+    width: 18px;
+}
+
+.datepicker {
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.timepicker {
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.new-plan__by-code {
+    margin-top: 33px;
+    padding: 0 25px;
+}
+.by-code__title {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.by-code__buttons {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.by-code__button {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.54);
+    label {
+        margin-left: 16px;
+    }
+    input:checked + label {
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+}

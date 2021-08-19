@@ -1,0 +1,27 @@
+.header__scroll {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px 12px 16px;
+}
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.menu__icon {
+    height: 24px;
+    width: 24px;
+}
+.header__new-plan {
+    padding: 0 20px 0 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__title {
+    margin: 0 67px 0 67px;
+}
+

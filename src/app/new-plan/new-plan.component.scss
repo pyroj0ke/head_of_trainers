@@ -1,0 +1,34 @@
+.new-plan {
+}
+.new-plan__container {
+    width: 866px;
+}
+.new-plan__header {
+    display: flex;
+    align-items: center;
+    margin: 12px 15px 12px 24px;
+}
+.header__text {
+    flex: 1 1 auto;
+    padding: 0 0 1px 1px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.header__item {
+    height: 40px;
+    width: 40px;
+}
+.header__icon {
+    height: 24px;
+    width: 24px;
+}
+
+.new-plan__nav {
+    padding: 0 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.nav__block {
+    display: flex;
+    padding: 10px 12px 0 12px;
+}
