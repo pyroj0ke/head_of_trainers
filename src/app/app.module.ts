@@ -21,6 +21,9 @@ import { NewPlanGeneralComponent } from './new-plan/new-plan-general/new-plan-ge
 import { NewPlanMembersComponent } from './new-plan/new-plan-members/new-plan-members.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     NgxMaterialTimepickerModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [NewPlanComponent],
   bootstrap: [AppComponent]
